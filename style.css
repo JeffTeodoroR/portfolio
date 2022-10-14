@@ -256,13 +256,13 @@ a {
 }
 /*=============================Efeito paralax========================*/
 
-.container h1{
+.paraH1{
     font-size: 20em;
 }
-.container h3{
+.paraH3{
     font-size: 4em;
 }
-.container p{
+.paraP{
     font-size: 2em;
 }
 .paraVideo h2{

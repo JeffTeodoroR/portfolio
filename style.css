@@ -76,12 +76,12 @@ h2{
 
 /* Estilo da barra de navegação. */
 
-a {
+li a {
     color: #fff;
     text-decoration: none;
 }
 
-a:hover {
+li a:hover {
     opacity: 0.7;
 }
 
@@ -97,9 +97,9 @@ nav{
     display: flex;
     background: rgb(0, 0, 0);
     justify-content: space-around;
-    align-items: center;
+    
     width: 100%;
-    height: 6vh;
+    height: 4vh;
 }
 
 .nav-list{
@@ -124,13 +124,13 @@ a {
 }
 
 .mobile-menu {
+
     display: none;
     cursor: pointer;
 }
 
 .mobile-menu div {
-    position: relative;
-    left: 23vw;
+
     width: 35px;
     height: 3px;
     background: #fff;
@@ -144,7 +144,7 @@ a {
     }
     .nav-list{
         position: absolute;
-        top: 6vh;
+        top: 4vh;
         width: 8vw;
         height: 22vh;
         left: 90vw;
@@ -186,10 +186,10 @@ a {
     }
     .nav-list{
         position: absolute;
-        top: 6vh;
+        top: 4vh;
         width: 12vw;
         height: 22vh;
-        left: 88vw;
+        left: 90vw;
         background: rgb(0, 0, 0);
         flex-direction: column;
         align-items: center;
@@ -256,13 +256,47 @@ a {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-github' viewBox='0 0 16 16'><path d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z'/></svg>");
 }
 /*=============================Efeito paralax========================*/
+.paraH1{
+    font-size: 15em;
+}
 
-@media(min-width: 1200px){
+.paraH3{
+    font-size: 3em;
+}
+
+.paraP{
+    font-size: 3em;
+}
+@media(max-width: 1400px){
     body{
         overflow-x: hidden;
     }
     .paraH1{
-        font-size: 5rem;
+        font-size: 15em;
+    }
+    
+    .paraH3{
+        font-size: 2.5em;
+    }
+    
+    .paraP{
+        font-size: 2.5em;
+    }
+    
+}
+@media(max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .paraH1{
+        font-size: 10em;
+    }
+    
+    .paraH3{
+        font-size: 2em;
+    }
+    .paraP{
+        font-size: 2em;
     }
     
 }
@@ -271,16 +305,21 @@ a {
     body{
         overflow-x: hidden;
     }
-    .container{
+    .container2{
         padding: 0 1rem;
     }
 
     .paraH1{
-        font-size: 3rem;
+        font-size: 8em;
     }
-    .paraH2{
-        font-size: 1.5rem;
+    
+    .paraH3{
+        font-size: 1.5em;
     }
+    .paraP{
+        font-size: 1.5em;
+    }
+
 }
 
 @media(max-width: 500px){
@@ -288,31 +327,21 @@ a {
         overflow-x: hidden;
     }
     .paraH1{
-        font-size: 2.5rem;
+        font-size: 5em;
+    }
+    
+    .paraH3{
+        font-size: 1em;
+    }
+    .paraP{
+        font-size: 1em;
     }
 
-    .paraH2{
-        font-size: 1.5rem;
-    }
-}
 
-.paraH1{
-    font-size: 20em;
-}
-.paraH3{
-    font-size: 4em;
-}
-.paraP{
-    font-size: 2em;
-}
-.paraVideo h2{
-    font-size: 20em;
-    text-align: center;
 }
 
 .paraImage{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     height: 100vh !important;
     width: 100%;
@@ -347,17 +376,17 @@ a {
 }
 
 .paraVideo{
-    height: 100vh;
-    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-
 .paraVideo video{
-    min-height: 100%;
-    position: fixed;
-    top:0;
+    position: relative;
     z-index: -1;
+    width: 100%;
+    height: 100%;
 }
-.container{
+.container2{
     height: 30vh;
     text-align: center;
 
